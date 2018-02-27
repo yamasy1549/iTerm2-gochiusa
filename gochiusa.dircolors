@@ -1,0 +1,275 @@
+#############################################################################
+#
+# Format:
+#   [Attribute codes];[Text color codes];[Background color codes]
+#
+#   Attribute codes:
+#     | code | style      |
+#     | ---- | ---------- |
+#     | 00   | none       |
+#     | 01   | bold       |
+#     | 04   | underscore |
+#     | 05   | blink      |
+#     | 07   | reverse    |
+#     | 08   | concealed  |
+#
+#   Text color codes:
+#     | code | style   |
+#     | ---- | ------- |
+#     | 30   | black   |
+#     | 31   | red     |
+#     | 32   | green   |
+#     | 33   | yellow  |
+#     | 34   | blue    |
+#     | 35   | magenta |
+#     | 36   | cyan    |
+#     | 37   | white   |
+#
+#   Background color codes:
+#     | code | style   |
+#     | ---- | ------- |
+#     | 40   | black   |
+#     | 41   | red     |
+#     | 42   | green   |
+#     | 43   | yellow  |
+#     | 44   | blue    |
+#     | 45   | magenta |
+#     | 46   | cyan    |
+#     | 47   | white   |
+#
+#############################################################################
+### By file type
+
+# global default
+NORMAL 00
+# normal file
+FILE 30
+# directory
+DIR 01;34
+# 777 directory
+OTHER_WRITABLE 34;40
+# symbolic link
+LINK 35
+
+# pipe, socket, block device, character device
+FIFO 30;44
+SOCK 35;44
+DOOR 35;44 # Solaris 2.5 and later
+BLK  33;44
+CHR  37;44
+
+#############################################################################
+### By file attributes
+
+# files with execute permission
+EXEC 01;31  # Unix
+.cmd 01;31  # Win
+.exe 01;31  # Win
+.com 01;31  # Win
+.bat 01;31  # Win
+.reg 01;31  # Win
+.app 01;31  # OSX
+
+#############################################################################
+### By extension
+
+# Text that we can edit with a regular editor
+.txt 37
+.org 37
+.md 37
+.mkd 37
+
+# Source text
+.h 37
+.hpp 37
+.c 37
+.C 37
+.cc 37
+.cpp 37
+.cxx 37
+.objc 37
+.cl 37
+.sh 37
+.bash 37
+.csh 37
+.zsh 37
+.el 37
+.vim 37
+.java 37
+.pl 37
+.pm 37
+.py 37
+.rb 37
+.hs 37
+.php 37
+.htm 37
+.html 37
+.shtml 37
+.erb 37
+.haml 37
+.xml 37
+.rdf 37
+.css 37
+.sass 37
+.scss 37
+.less 37
+.js 37
+.coffee 37
+.man 37
+.0 37
+.1 37
+.2 37
+.3 37
+.4 37
+.5 37
+.6 37
+.7 37
+.8 37
+.9 37
+.l 37
+.n 37
+.p 37
+.pod 37
+.tex 37
+.go 37
+.sql 37
+.csv 37
+.sv 37
+.svh 37
+.v 37
+.vh 37
+.vhd 37
+
+#############################################################################
+### Multimedia formats
+
+# Image
+.bmp 33
+.cgm 33
+.dl 33
+.dvi 33
+.emf 33
+.eps 33
+.gif 33
+.jpeg 33
+.jpg 33
+.JPG 33
+.mng 33
+.pbm 33
+.pcx 33
+.pdf 33
+.pgm 33
+.png 33
+.PNG 33
+.ppm 33
+.pps 33
+.ppsx 33
+.ps 33
+.svg 33
+.svgz 33
+.tga 33
+.tif 33
+.tiff 33
+.xbm 33
+.xcf 33
+.xpm 33
+.xwd 33
+.xwd 33
+.yuv 33
+
+# Audio
+.aac 33
+.au  33
+.flac 33
+.m4a 33
+.mid 33
+.midi 33
+.mka 33
+.mp3 33
+.mpa 33
+.mpeg 33
+.mpg 33
+.ogg  33
+.opus 33
+.ra 33
+.wav 33
+
+# Video
+.anx 33
+.asf 33
+.avi 33
+.axv 33
+.flc 33
+.fli 33
+.flv 33
+.gl 33
+.m2v 33
+.m4v 33
+.mkv 33
+.mov 33
+.MOV 33
+.mp4 33
+.mp4v 33
+.mpeg 33
+.mpg 33
+.nuv 33
+.ogm 33
+.ogv 33
+.ogx 33
+.qt 33
+.rm 33
+.rmvb 33
+.swf 33
+.vob 33
+.webm 33
+.wmv 33
+
+### Misc
+# Binary document formats and multimedia source
+.doc 31
+.docx 31
+.rtf 31
+.odt 31
+.dot 31
+.dotx 31
+.ott 31
+.xls 31
+.xlsx 31
+.ods 31
+.ots 31
+.ppt 31
+.pptx 31
+.odp 31
+.otp 31
+.fla 31
+.psd 31
+.ai 31
+
+# Archives, compressed
+.7z   01;35
+.apk  01;35
+.arj  01;35
+.bin  01;35
+.bz   01;35
+.bz2  01;35
+.cab  01;35  # Win
+.deb  01;35
+.dmg  01;35  # OSX
+.gem  01;35
+.gz   01;35
+.iso  01;35
+.jar  01;35
+.msi  01;35  # Win
+.rar  01;35
+.rpm  01;35
+.tar  01;35
+.tbz  01;35
+.tbz2 01;35
+.tgz  01;35
+.tx   01;35
+.war  01;35
+.xpi  01;35
+.xz   01;35
+.z    01;35
+.Z    01;35
+.zip  01;35
