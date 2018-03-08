@@ -26,3 +26,7 @@ fi
 ## `gochiusa.itermcolors`
 
 iTerm2.app > `Preferences` > `Profiles` > `Colors` > `Color Presets...` > `Import...`
+
+## More info
+
+[カラースキーマ iTerm2-gochiusa をつくった | ようじょのおえかきちょう](http://yamasy1549.hateblo.jp/entry/2018/02/28/010945)
