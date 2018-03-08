@@ -27,6 +27,9 @@ fi
 
 iTerm2.app > `Preferences` > `Profiles` > `Colors` > `Color Presets...` > `Import...`
 
+## Do you use Vim?
+https://github.com/yamasy1549/gochiusa.vim
+
 ## More info
 
 [カラースキーマ iTerm2-gochiusa をつくった | ようじょのおえかきちょう](http://yamasy1549.hateblo.jp/entry/2018/02/28/010945)
